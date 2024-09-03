@@ -41,7 +41,9 @@
                 <li>
                     <a href=" #My intro"> Visiting Home page</a>
                 </li>
+                <li>
                 <a href ="#Skills and Expertise">Skills and Expertise</a>
+            </li>
                 <li>
                 <a href = "#Projects">Projects</a>
                 </li>
@@ -83,8 +85,8 @@
 
     <div>
         <h2>Exprecience Lavel</h2>
-        <label for ="Exprecience Lavel">Exprecience Lavel</label>
-        <progress id = "Exprecience Lavel"value ="50"max ="100">50</progress>
+        <label for ="Exprecience Lavel">Experience Lavel</label>
+        <meter id = "Exprecience" min = "0" max = "10"value = 5>5 years exprecience</meter>
     </div>
 <!-- Skills and Expertise -->
      <section id = "Skills and Expertise">
@@ -118,7 +120,7 @@
             </tbody>
         </table>
         <h2>Areas of Expertise:</h2>
-        <lo>
+        <ul>
             <li><strong>Requirement Analysis: </strong>Understanding client needs and project goals to outline clear requirements.</li>
             <li><strong>Design and Planning: </strong> Creating wireframes, design mockups, and planning the project architecture.</li>
             <li><strong>Development: </strong>Writing clean, efficient code and implementing features according to the project plan.</li>
@@ -126,7 +128,7 @@
             <li><strong>Deployment: </strong> Deploying the project to a live environment and ensuring it functions as expected.</li>
            <li><strong>Maintenance and Updates: </strong>Providing ongoing support, fixing bugs, and updating the project as needed.
            </li>  
-        </lo>
+        </ul>
         <h4><em> Proficient in C programming, HTML, and Java</em></h4>
      </section>
 
@@ -190,28 +192,60 @@
         method="POST">
             <section id = "Contact Form">
                 <h2>Contact Form</h2>
+               <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for ="name">Name : </label>
+                   <input type ="text"
+                    id = "name"
+                   required>
+                   </div>
+        
+                   <div>
+                    <label for = "E-mail">E-mail : </label>
+                    <input type = "E-mail"
+                     id = "E-mail"
+                    required>
+                   </div>
+        
+                   <div>
+                    <label for = "Age">Age :</label>
+                    <input type = "number" 
+                    id = "Age"
+                    name = "Age"
+                    min = "18"
+                    max = "55"
+                    required>
+               </fieldset>
+
                <div>
-                <label for ="name">Name : </label>
-               <input type ="text"
-                id = "name"
-               required>
-               </div>
-    
-               <div>
-                <label for = "E-mail">E-mail : </label>
-                <input type = "E-mail"
-                 id = "E-mail"
+                <label for ="color">Favorite color:</label>
+                <input 
+                type="color"
+                id ="color"
+                name ="color" 
+                value ="#ff0000"
                 required>
                </div>
-    
                <div>
-                <label for = "Age">Age :</label>
-                <input type = "number" 
-                id = "Age"
-                name = "Age"
-                min = "18"
-                max = "55"
-                required>
+                <label for ="Experience">Number of year Experience :</label>
+                <input type="range"id = "Experience" value="5"min ="0"max ="10"required = "1">
+               </div>
+               <div>
+                <label for ="programming">Favorite programming :</label>
+                <input 
+                list ="language"
+                name ="programming"
+                id ="programming"required>
+                <datalist id ="language">
+                    <option>C-Programming</option>
+                    <option>C++</option>
+                    <option>Java</option>
+                    <option>python</option>
+                    <option>css</option>
+                    <option>javascript</option>
+                </datalist>
+               </div>
     
                </div>
                <div>
@@ -275,6 +309,7 @@
           <!--Added google map-->
         <footer>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29455.013331605613!2d89.75475881156432!3d22.658386583534558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fff5d7e37f6e3d%3A0xbb70031cead1d5af!2sBagerhat!5e0!3m2!1sen!2sbd!4v1725192485127!5m2!1sen!2sbd" 
+            title = "Home map"
             width="500" height="350" 
             style="border:0;" allowfullscreen=""
              loading="lazy" 
